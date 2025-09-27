@@ -37,14 +37,15 @@ Erneuere the blocks below so they print out "Hello World!"
   parsonsPuzzle.shuffleLines();
   $("#p1-newInstanceLink").click(function(event){
       event.preventDefault();
-      parsonsPuzzle.Neu probieren();
+      parsonsPuzzle.shuffleLines();
   });
   $("#p1-feedbackLink").click(function(event){
       event.preventDefault();
-      parsonsPuzzle.Lösung zeigen();
+      parsonsPuzzle.getFeedback();
   });
 })();
 </script>
+
 
 
 ## Parsons 2 (Variable Check Grader)

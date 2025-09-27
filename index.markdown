@@ -37,11 +37,11 @@ Erneuere the blocks below so they print out "Hello World!"
   parsonsPuzzle.shuffleLines();
   $("#p1-newInstanceLink").click(function(event){
       event.preventDefault();
-      parsonsPuzzle.shuffleLines();
+      parsonsPuzzle.Neu probieren();
   });
   $("#p1-feedbackLink").click(function(event){
       event.preventDefault();
-      parsonsPuzzle.getFeedback();
+      parsonsPuzzle.Lösung zeigen();
   });
 })();
 </script>

@@ -14,11 +14,11 @@ Construct a program that swaps the values of variables <code>x</code> and <code>
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "gehe 50 vorwärts
+  var initial = "gehe 50 vorwaerts
 \n" +
     "drehe links
 \n" +
-    "gehe 3 vorwärts";
+    "gehe 3 vorwaerts";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "r-sortable",
     "max_wrong_lines": 10,
@@ -42,4 +42,5 @@ Construct a program that swaps the values of variables <code>x</code> and <code>
   }); 
 })(); 
 </script>
+
 [Next](./example2.html)

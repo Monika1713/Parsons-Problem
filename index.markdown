@@ -19,13 +19,13 @@ Erneuere the blocks below so they print out "Hello World!"
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "fwd 30
+  var initial = "fwd30
 \n" +
-    "rt 90
+    "rt90
 \n" +
-    "fwd 60
+    "fwd60
 \n" +
-    "lt 90";
+    "lt90";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
@@ -49,28 +49,6 @@ Erneuere the blocks below so they print out "Hello World!"
   }); 
 })(); 
 </script>
-
-
-    "unittests": "import unittestparson\nclass myTests(unittestparson.unittest):\n  def test_0(self):\n    self.assertEqual(,,)\n_test_result = myTests().main()"
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#p3-newInstanceLink").click(function(event){
-      event.preventDefault();
-      parsonsPuzzle.shuffleLines();
-  });
-  $("#p3-feedbackLink").click(function(event){
-      event.preventDefault();
-      parsonsPuzzle.getFeedback();
-  });
-})();
-</script>
-
-### Implementation Notes
-
-When you host multiple Parson's problems on a single markdown page, you need to add a unique prefix. You can easily do this in the Codio generator by typing a unique prefix into the "Prefix" textbox and pressing Enter/Return. Then you can simply copy-paste like normal.
-
-If want each problem to be it's own page, you can use relative path links at the bottom of each of your markdown pages as seen below. If you want students to be able to return to previous problems in this format, consider adding previous links or link to a table of contents like page.
 
 ### Example Next Link
 [Next](./parsons/example1.html)

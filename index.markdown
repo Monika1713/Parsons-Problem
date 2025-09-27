@@ -19,10 +19,10 @@ Erneuere the blocks below so they print out "Hello World!"
 </p>
 <script type="text/javascript">
 (function() {
-  var initial = "print(\"Hello\")\n" +
+  var initial = "print(\"Test\")\n" +
     "print(\" \")\n" +
-    "print(\"World\")\n" +
-    "print(\"!\")";
+    "print(\"Me\")\n" +
+    "print(\"Now\")";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "p1-sortable",
     "max_wrong_lines": 10,

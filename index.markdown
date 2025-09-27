@@ -6,13 +6,13 @@ title: Multiple Parson's Problems on One Page
 ## Parsons 1 (Line Based Grader)
 Ziehe die Blöcke in die korrekte Reihenfolge.
 
-<div id="p1-sortableTrash" class="sortable-code"></div>
-<div id="p1-sortable" class="sortable-code"></div>
-<div style="clear:both;"></div>
-<p>
-    <input id="p1-feedbackLink" value="Get Feedback" type="button" />
-    <input id="p1-newInstanceLink" value="Reset Problem" type="button" />
-</p>
+<div id="sortableTrash" class="sortable-code"></div> 
+<div id="sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
 <script type="text/javascript"> 
 (function(){
   var initial = "geh 3 Schritte vorwärts
@@ -23,7 +23,7 @@ Ziehe die Blöcke in die korrekte Reihenfolge.
 \n" +
     "Beende den Lauf";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "Mein eigenes Parsons-Problem-sortable",
+    "sortableId": "sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -31,21 +31,20 @@ Ziehe die Blöcke in die korrekte Reihenfolge.
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Mein eigenes Parsons-Problem-sortableTrash"
+    "trashId": "sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#Mein eigenes Parsons-Problem-newInstanceLink").click(function(event){ 
+  $("#newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#Mein eigenes Parsons-Problem-feedbackLink").click(function(event){ 
+  $("#feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
-
 
 ## Parsons 2 (Variable Check Grader)
 Construct a program that swaps the values of variables <code>x</code> and <code>y</code> using the helper variable <code>tmp</code>. You can change the names of the variables (<span class="jsparson-toggle"></span>) by clicking them.

@@ -19,9 +19,7 @@ Ziehe die Blöcke in die korrekte Reihenfolge.
 \n" +
     "drehe dich um
 \n" +
-    "gehe 190 Schritte vorwärts
-\n" +
-    "Beende den Lauf";
+    "gehe 190 Schritte vorwärts";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,

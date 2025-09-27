@@ -1,47 +1,58 @@
 layout: default
 title: Multiple Parson's Problems on One Page
 ---
-# Parsons Practice
+# Parsons Puzzle Übung
 
 ## Parsons 1 (Line Based Grader)
 Ziehe die Blöcke in die korrekte Reihenfolge.
 
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
+<div id="p2-sortableTrash" class="sortable-code"></div>
+<div id="p2-sortable" class="sortable-code"></div>
+<div style="clear:both;"></div>
+<p>
+    <input id="p2-feedbackLink" value="Get Feedback" type="button" />
+    <input id="p2-newInstanceLink" value="Reset Problem" type="button" />
+</p>
+<script type="text/javascript">
 (function(){
-  var initial = "geh 3 Schritte vorwärts
-\n" +
-    "drehe dich um
-\n" +
-    "gehe 190 Schritte vorwärts";
+  var initial = "$$toggle::x::y::tmp$$ = $$toggle::x::y::tmp$$\n" +
+    "$$toggle::x::y::tmp$$ = $$toggle::x::y::tmp$$\n" +
+    "$$toggle::x::y::tmp$$ = $$toggle::x::y::tmp$$";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "p2-sortable",
     "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "grader": ParsonsWidget._graders.VariableCheckGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "sortableTrash"
+    "trashId": "p2-sortableTrash",
+    "vartests": [
+        {
+            "message": "Testing with initial variable values x = 3 and y = 4",
+            "initcode": "x = 3\ny = 4",
+            "code": "",
+            "variables": {}
+        },
+        {
+            "message": "Testing with initial variable values x = 0 and y = 2",
+            "initcode": "x = 0\ny = 2",
+            "code": "",
+            "variables": {}
+        }
+    ]
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
+  $("#p2-newInstanceLink").click(function(event){
+      event.preventDefault();
+      parsonsPuzzle.shuffleLines();
+  });
+  $("#p2-feedbackLink").click(function(event){
+      event.preventDefault();
+      parsonsPuzzle.getFeedback();
+ });
+})();
 </script>
 
 ## Parsons 2 (Variable Check Grader)

@@ -1,5 +1,5 @@
 
-## siDie Schildkröte bewegt chEin farbiges 3-Eck
+## Ein farbiges 3-Eck
 
 Bringe die Befehle in die korrekte Reihenfolge. Ziehe die Blöcke dazu von links nach rechts. 
 

@@ -1,7 +1,7 @@
 
-## Die Schildkröte bewegt sich
+## siDie Schildkröte bewegt chEin farbiges 3-Eck
 
-Bringe die Befehle in die korrekte Reihenfolge.
+Bringe die Befehle in die korrekte Reihenfolge. Ziehe die Blöcke dazu von links nach rechts. 
 
 <div id="p8-sortableTrash" class="sortable-code"></div>
 <div id="p8-sortable" class="sortable-code"></div>
@@ -47,4 +47,3 @@ Bringe die Befehle in die korrekte Reihenfolge.
 })();
 </script>
 
-[Next](./parsons/example1.html)

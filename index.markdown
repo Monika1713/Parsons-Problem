@@ -10,12 +10,11 @@ Bringe die Befehle in die korrekte Reihenfolge.
     <input id="p8-feedbackLink" value="Get Feedback" type="button" /> 
     <input id="p8-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
+
 <script type="text/javascript"> 
 (function(){
-  var initial = "schritt 1
-\n" +
-    "Schritt 2
-\n" +
+  var initial = "schritt 1\n" +
+    "Schritt 2\n" +
     "Schritt 3";
   var parsonsPuzzle = new ParsonsWidget({
     sortableId: "p8-sortable",

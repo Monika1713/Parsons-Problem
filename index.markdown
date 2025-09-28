@@ -18,15 +18,15 @@ Bringe die Befehle in die korrekte Reihenfolge.
 \n" +
     "Schritt 3";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "p8-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true,
-    "trashId": "p8-sortableTrash"
+    sortableId: "p8-sortable",
+    max_wrong_lines: 10,
+    grader: ParsonsWidget._graders.LineBasedGrader,
+    exec_limit: 2500,
+    can_indent: true,
+    x_indent: 50,
+    lang: "en",
+    show_feedbac": true,
+    trashId: "p8-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();

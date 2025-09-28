@@ -2,6 +2,7 @@
 ## Ein farbiges 3-Eck
 
 Bringe die Befehle in die korrekte Reihenfolge. Ziehe die Blöcke dazu von links nach rechts. 
+Über den Knopf "Get Feeback" kannst du kontrollieren, ob du richtig liegst.
 
 <div id="p8-sortableTrash" class="sortable-code"></div>
 <div id="p8-sortable" class="sortable-code"></div>

@@ -24,7 +24,7 @@ Bringe die Befehle in die korrekte Reihenfolge.
     can_indent: true,
     x_indent: 50,
     lang: "en",
-    show_feedbac": true,
+    show_feedback": true,
     trashId: "p8-sortableTrash"
   });
   parsonsPuzzle.init(initial);

@@ -3,12 +3,12 @@
 
 Bringe die Befehle in die korrekte Reihenfolge.
 
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+<div id="8-sortableTrash" class="sortable-code"></div> 
+<div id="8-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="8-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="8-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -18,7 +18,7 @@ Bringe die Befehle in die korrekte Reihenfolge.
 \n" +
     "Schritt 3";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "8-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -26,15 +26,15 @@ Bringe die Befehle in die korrekte Reihenfolge.
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "sortableTrash"
+    "trashId": "8-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#8-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#8-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
